@@ -1,25 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import wands from './wanda.js';
+import WandaList from './WandaList';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div id="app" className="container-fluid">
+
+      <div className="row image">
+
+
+        <nav class="navbar navbar-light bg-dark">
+          <span class="navbar-brand mb-0 h1"></span>
+        </nav>
+        <div className="content col-10">
+          <WandaList wands={wands} />
+
+        </div>
+      </div>
+    </div >
   );
 }
 
