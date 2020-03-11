@@ -18,9 +18,11 @@ function WandaCard(props) {
                     <h5 className="card-title">
                         <span>Name: {wandaName}</span>
                     </h5>
-                    <small className="card-text fontsize">Wood: {wanda.wood}</small>
+                    <small className="card-text fontsize">Wood Type: {wanda.wood}</small>
                     <br></br>
                     <small className="card-text fontsize"> Length: {wanda.length}</small>
+                    <br></br>
+                    <small className="card-text fontsize"> Price: {wanda.price}</small>
 
                 </div>
             </div>
